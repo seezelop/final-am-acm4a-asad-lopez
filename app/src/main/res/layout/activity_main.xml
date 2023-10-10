@@ -18,7 +18,42 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="1.0"></LinearLayout>
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/footer_destacados"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:text="@string/footer_principales"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/footer_descripcion"
+                android:layout_width="87dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="272dp"
+                android:text="Imperdibles Turismo en Barrios Compras en la Ciudad Teatros Qué hacer esta semana ¿Primera vez en Buenos Aires? "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.605" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -70,7 +105,7 @@
                 android:id="@+id/contenido_descripcion"
                 android:layout_width="221dp"
                 android:layout_height="98dp"
-                android:text="No dudes en  consultar todas  nuestras  actividades y propuestas  destacadas"
+                android:text="@string/contenido_descripcion"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp"
