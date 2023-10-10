@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">parcial-1-am-acm4a-asad-lopez</string>
+    <string name="contentTittleText">lista de contenidos</string>
+    <string name="buttonText">Agregar Contenido</string>
+    <string name="listTextItem">Es un ejemplo de texto</string>
+
 </resources>
