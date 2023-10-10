@@ -15,13 +15,15 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"></LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="425dp"
-        android:layout_height="109dp"
+        android:layout_width="414dp"
+        android:layout_height="60dp"
         android:background="@color/orange"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +31,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenido"
+        android:layout_width="399dp"
+        android:layout_height="553dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="522dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:text="@string/contenido_titulo"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.478"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="3dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/contenido_descripcion"
+                android:layout_width="221dp"
+                android:layout_height="98dp"
+                android:text="No dudes en  consultar todas  nuestras  actividades y propuestas  destacadas"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.04" />
+
+            <Button
+                android:id="@+id/contenido_buscar"
+                android:layout_width="178dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="4dp"
+                android:backgroundTint="@color/orange"
+                android:text="Buscar"
+                android:textColor="@color/black"
+                app:cornerRadius="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 

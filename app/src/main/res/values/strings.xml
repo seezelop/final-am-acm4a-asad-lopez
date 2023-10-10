@@ -3,5 +3,6 @@
     <string name="contentTittleText">lista de contenidos</string>
     <string name="buttonText">Agregar Contenido</string>
     <string name="listTextItem">Es un ejemplo de texto</string>
+    <string name="contenido_titulo">Que hacer esta semana</string>
 
 </resources>
