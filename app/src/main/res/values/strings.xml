@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">parcial-1-am-acm4a-asad-lopez</string>
+    <string name="contentTittleText">lista de contenidos</string>
+    <string name="buttonText">Agregar Contenido</string>
+    <string name="listTextItem">Es un ejemplo de texto</string>
+    <string name="contenido_titulo">Que hacer esta semana</string>
+    <string name="contenido_descripcion">No dudes en consultar todas nuestras actividades y propuestas destacadas</string>
+    <string name="footer_principales">Lo mas visitado</string>
+    <string name="footer_sugerencias">Imperdibles Turismo en Barrios Compras en la Ciudad Teatros Qué hacer esta semana ¿Primera vez en Buenos Aires?</string>
+
 </resources>
