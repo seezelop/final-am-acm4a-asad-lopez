@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
@@ -44,7 +44,7 @@
                 android:layout_width="87dp"
                 android:layout_height="86dp"
                 android:layout_marginStart="272dp"
-                android:text="Imperdibles Turismo en Barrios Compras en la Ciudad Teatros Qué hacer esta semana ¿Primera vez en Buenos Aires? "
+                android:text="@string/footer_sugerencias"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="10sp"
@@ -121,6 +121,8 @@
                 android:layout_width="178dp"
                 android:layout_height="53dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="121dp"
+                android:layout_marginTop="275dp"
                 android:layout_marginEnd="100dp"
                 android:layout_marginBottom="4dp"
                 android:backgroundTint="@color/orange"
@@ -128,10 +130,13 @@
                 android:textColor="@color/black"
                 app:cornerRadius="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contenido_descripcion" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
