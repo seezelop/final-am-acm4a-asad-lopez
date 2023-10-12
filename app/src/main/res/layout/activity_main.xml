@@ -84,7 +84,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="522dp">
+            android:layout_height="match_parent">
 
             <TextView
                 android:id="@+id/textView"
@@ -98,8 +98,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.478"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="3dp"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="3dp" />
 
             <TextView
                 android:id="@+id/contenido_descripcion"
