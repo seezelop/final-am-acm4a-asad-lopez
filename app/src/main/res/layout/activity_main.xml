@@ -90,7 +90,6 @@
                 android:id="@+id/textView"
                 android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="17dp"
                 android:text="@string/contenido_titulo"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -112,7 +111,7 @@
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintHorizontal_bias="0.506"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 app:layout_constraintVertical_bias="0.04" />
@@ -127,7 +126,7 @@
                 android:layout_marginEnd="100dp"
                 android:layout_marginBottom="4dp"
                 android:backgroundTint="@color/orange"
-                android:text="Buscar"
+                android:text="@string/contenido_textoBoton"
                 android:textColor="@color/black"
                 app:cornerRadius="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -139,12 +138,34 @@
                 android:id="@+id/imageView2"
                 android:layout_width="385dp"
                 android:layout_height="178dp"
-                android:layout_marginTop="184dp"
+                android:layout_marginTop="208dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/patio" />
+
+            <TextView
+                android:id="@+id/contenido_dia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contenido_buscar"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/contenido_tipoAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="35dp"
+                android:text="@string/contenido_buscarAct"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/contenido_buscar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
