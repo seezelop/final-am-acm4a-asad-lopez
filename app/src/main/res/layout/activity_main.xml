@@ -101,7 +101,7 @@
                 tools:ignore="MissingConstraints" />
 
             <Button
-                android:id="@+id/contenido_buscar"
+                android:id="@+id/btn_contenido_buscar"
                 android:layout_width="178dp"
                 android:layout_height="53dp"
                 android:layout_gravity="center"
@@ -109,7 +109,7 @@
                 android:layout_marginEnd="100dp"
                 android:layout_marginBottom="4dp"
                 android:backgroundTint="@color/orange"
-                android:text="@string/contenido_textoBoton"
+                android:text="@string/btn_contenido_buscar"
                 android:textColor="@color/black"
                 app:cornerRadius="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -127,10 +127,10 @@
                 app:srcCompat="@drawable/patio" />
 
             <TextView
-                android:id="@+id/contenido_dia"
+                android:id="@+id/btn_contenido_dia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/contenido_buscar"
+                android:text="@string/btn_contenido_dia"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
@@ -144,7 +144,7 @@
                 android:layout_marginBottom="48dp"
                 android:text="@string/contenido_buscarAct"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/contenido_buscar"
+                app:layout_constraintBottom_toTopOf="@+id/btn_contenido_buscar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -178,7 +178,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
-                app:layout_constraintBottom_toTopOf="@+id/contenido_buscar"
+                app:layout_constraintBottom_toTopOf="@+id/btn_contenido_buscar"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -187,4 +187,3 @@
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
