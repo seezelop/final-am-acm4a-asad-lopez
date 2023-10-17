@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private Spinner s;
+    //private Spinner s2 = findViewById(R.id.opciones_actividad);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,16 +26,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
             s= findViewById(R.id.opciones_dia);
-            ArrayList<String> dias = new ArrayList<>();
+        ArrayList<String> dias = new ArrayList<>();
             dias.add("Lunes");//agrego los dias a la lista
             dias.add("Martes");
             dias.add("Miercoles");
+
+            ArrayList<String> actividades=new ArrayList<>();
+            actividades.add("Visitas guiadas");
+            actividades.add("Gastronomia");
+            actividades.add("Deporte");
 
             //parametros: contexto, ubicacion de los items del spinner, arraylist
             ArrayAdapter<String> adaptador=new ArrayAdapter(this,
                     android.R.layout.simple_spinner_item, dias);
 
+            /*ArrayAdapter<String> adaptador2=new ArrayAdapter(this,
+                android.R.layout.simple_spinner_item, actividades);*/
+
             s.setAdapter(adaptador);//agregar adaptador al spinner
+            /*s2.setAdapter(adaptador2);*/
             //s.setGravity(Gravity.BOTTOM);
 
             s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -42,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                     String mensaje=(String)s.getAdapter().getItem(i);
 
-                    Toast.makeText(MainActivity.this, "seleccionado: "+mensaje, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "posicion: "+mensaje, Toast.LENGTH_SHORT).show();
                 }
 
                 @Override
@@ -50,6 +60,23 @@ public class MainActivity extends AppCompatActivity {
 
                 }
             });
+
+            /*s2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                    String mensaje=(String)s.getAdapter().getItem(i);
+
+                    Toast.makeText(MainActivity.this, "posicion: "+mensaje, Toast.LENGTH_SHORT).show();
+
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> adapterView) {
+
+                }
+            });*/
+
+
 
 
 
