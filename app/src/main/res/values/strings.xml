@@ -6,5 +6,9 @@
     <string name="contenido_titulo">Que hacer esta semana</string>
     <string name="contenido_descripcion">No dudes en consultar todas nuestras actividades y propuestas destacadas</string>
     <string name="footer_principales">Lo mas visitado</string>
+    <string name="footer_sugerencias">Imperdibles Turismo en Barrios Compras en la Ciudad Teatros Qué hacer esta semana ¿Primera vez en Buenos Aires?</string>
+    <string name="btn_contenido_dia">Buscar por dia</string>
+    <string name="contenido_buscarAct">Buscar por tipo de actividad</string>
+    <string name="btn_contenido_buscar">Buscar</string>
 
 </resources>

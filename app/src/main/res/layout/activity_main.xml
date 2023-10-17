@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="483dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
@@ -44,7 +44,7 @@
                 android:layout_width="87dp"
                 android:layout_height="86dp"
                 android:layout_marginStart="272dp"
-                android:text="Imperdibles Turismo en Barrios Compras en la Ciudad Teatros Qué hacer esta semana ¿Primera vez en Buenos Aires? "
+                android:text="@string/footer_sugerencias"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="10sp"
@@ -98,75 +98,92 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.478"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="3dp" />
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btn_contenido_buscar"
+                android:layout_width="178dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="121dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="4dp"
+                android:backgroundTint="@color/orange"
+                android:text="@string/btn_contenido_buscar"
+                android:textColor="@color/black"
+                app:cornerRadius="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="385dp"
+                android:layout_height="178dp"
+                android:layout_marginTop="184dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/patio" />
+
+            <TextView
+                android:id="@+id/btn_contenido_dia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_contenido_dia"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/contenido_tipoAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:text="@string/contenido_buscarAct"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/btn_contenido_buscar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Spinner
+                android:id="@+id/opciones_dia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="bottom"
+                app:layout_constraintBottom_toTopOf="@+id/contenido_tipoAct"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/contenido_descripcion"
-                android:layout_width="204dp"
-                android:layout_height="87dp"
+                android:layout_width="233dp"
+                android:layout_height="66dp"
+                android:layout_marginBottom="18dp"
                 android:text="@string/contenido_descripcion"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.489"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.04" />
+                app:layout_constraintStart_toStartOf="parent" />
 
-
-            <EditText
-                android:id="@+id/busquedaPorDia"
-                android:layout_width="223dp"
-                android:layout_height="43dp"
-                android:hint="Buscar por dia"
-                android:inputType="text"
-                android:textAlignment="center"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="376dp" />
-
-            <EditText
-                android:id="@+id/busquedaPorActividad"
-                android:layout_width="220dp"
-                android:layout_height="39dp"
-                android:hint="Buscar por actividad"
-                android:inputType="text"
-                android:textAlignment="center"
-                tools:layout_editor_absoluteX="95dp"
-                tools:layout_editor_absoluteY="462dp" />
-
-            <ImageView
-                android:id="@+id/image_patio"
-                android:layout_width="399dp"
-                android:layout_height="162dp"
-                android:layout_centerInParent="true"
-                android:contentDescription="imagen semanal de destacados"
-                android:scaleType="fitCenter"
-                android:src="@drawable/patio"
-                app:layout_constraintBottom_toTopOf="@+id/contenido_buscar"
+            <Spinner
+                android:id="@+id/opciones_actividad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_contenido_buscar"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/contenido_descripcion"
-                app:layout_constraintVertical_bias="0.204" />
-
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/contenido_buscar"
-        android:layout_width="178dp"
-        android:layout_height="53dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/orange"
-        android:text="Buscar"
-        android:textColor="@color/black"
-        app:cornerRadius="0dp"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="1116dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
