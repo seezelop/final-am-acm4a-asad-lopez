@@ -95,26 +95,10 @@
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/contenido_descripcion"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.478"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/contenido_descripcion"
-                android:layout_width="233dp"
-                android:layout_height="71dp"
-                android:text="@string/contenido_descripcion"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.506"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                app:layout_constraintVertical_bias="0.04" />
 
             <Button
                 android:id="@+id/contenido_buscar"
@@ -122,7 +106,6 @@
                 android:layout_height="53dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="121dp"
-                android:layout_marginTop="275dp"
                 android:layout_marginEnd="100dp"
                 android:layout_marginBottom="4dp"
                 android:backgroundTint="@color/orange"
@@ -131,16 +114,14 @@
                 app:cornerRadius="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/contenido_descripcion" />
+                app:layout_constraintStart_toStartOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="385dp"
                 android:layout_height="178dp"
-                android:layout_marginTop="208dp"
+                android:layout_marginTop="184dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/patio" />
@@ -160,11 +141,12 @@
                 android:id="@+id/contenido_tipoAct"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="35dp"
+                android:layout_marginBottom="48dp"
                 android:text="@string/contenido_buscarAct"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/contenido_buscar"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
@@ -182,10 +164,24 @@
                 android:id="@+id/opciones_dia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 android:gravity="bottom"
-                tools:layout_editor_absoluteY="416dp" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="396dp" />
+
+            <TextView
+                android:id="@+id/contenido_descripcion"
+                android:layout_width="233dp"
+                android:layout_height="66dp"
+                android:layout_marginBottom="18dp"
+                android:text="@string/contenido_descripcion"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
