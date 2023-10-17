@@ -7,8 +7,13 @@
     <string name="contenido_descripcion">No dudes en consultar todas nuestras actividades y propuestas destacadas</string>
     <string name="footer_principales">Lo mas visitado</string>
     <string name="footer_sugerencias">Imperdibles Turismo en Barrios Compras en la Ciudad Teatros Qué hacer esta semana ¿Primera vez en Buenos Aires?</string>
-    <string name="btn_contenido_dia">Buscar por dia</string>
+    <string name="contenido_dia">Buscar por dia</string>
     <string name="contenido_buscarAct">Buscar por tipo de actividad</string>
     <string name="btn_contenido_buscar">Buscar</string>
-
+    <string name="visita_guiada_al_teatro_colon">Visita guiada al teatro colon</string>
+    <string name="primer_subtitulo">¿Cuándo?</string>
+    <string name="donde">¿Dónde?</string>
+    <string name="horario_colon">De lunes a viernes, de 10 a 16:45 h. Sábado y domingo, de 11 a 16:45 h.</string>
+    <string name="descripcion_colon">Recorré los rincones del Teatro Colón con quienes pueden enseñarte todos sus secretos e historia. Van a guiarte por la sala, el foyer principal, la galería de bustos y el salón dorado , y te contarán los detalles de la arquitectura de este magnífico edificio. El paseo dura aproximadamente unos 50 minutos.</string>
+    <string name="direccion_colon">Cerrito 650</string>
 </resources>
