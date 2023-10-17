@@ -167,6 +167,26 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
+            <TextView
+                android:id="@+id/spinner_text"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textSize="16sp"
+                android:background="?android:selectableItemBackground"/>
+
+            <Spinner
+                android:id="@+id/opciones_dia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:gravity="bottom"
+                tools:layout_editor_absoluteY="416dp" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
