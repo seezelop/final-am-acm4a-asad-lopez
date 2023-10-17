@@ -2,6 +2,7 @@ package com.example.parcial_1_am_acm4a_asad_lopez;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -53,8 +54,15 @@ public class MainActivity extends AppCompatActivity {
         miBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Opcioj seleccionada", Toast.LENGTH_SHORT).show();
-            }
+                //Toast.makeText(MainActivity.this, "Opcioj seleccionada", Toast.LENGTH_SHORT).show();
+                //asocio con un nuevo activity
+
+                //si selecciono lunes como dia y visitas guiadas como actividad
+                Intent intent = new Intent(MainActivity.this, lunes_visitas.class);
+                startActivity(intent);
+
+                //si selecciono martes y gastronomia
+        }
         });
     }
 }
