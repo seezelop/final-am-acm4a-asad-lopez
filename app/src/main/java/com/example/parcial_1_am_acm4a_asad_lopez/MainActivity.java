@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private Spinner s;
-    //private Spinner s2 = findViewById(R.id.opciones_actividad);
+    private Spinner s2 = findViewById(R.id.opciones_actividad);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
             ArrayAdapter<String> adaptador=new ArrayAdapter(this,
                     android.R.layout.simple_spinner_item, dias);
 
-            /*ArrayAdapter<String> adaptador2=new ArrayAdapter(this,
-                android.R.layout.simple_spinner_item, actividades);*/
+            ArrayAdapter<String> adaptador2=new ArrayAdapter(this,
+                android.R.layout.simple_spinner_item, actividades);
 
             s.setAdapter(adaptador);//agregar adaptador al spinner
-            /*s2.setAdapter(adaptador2);*/
+            s2.setAdapter(adaptador2);
             //s.setGravity(Gravity.BOTTOM);
 
             s.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-            /*s2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            s2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                 @Override
                 public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                     String mensaje=(String)s.getAdapter().getItem(i);
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onNothingSelected(AdapterView<?> adapterView) {
 
                 }
-            });*/
+            });
 
 
 
