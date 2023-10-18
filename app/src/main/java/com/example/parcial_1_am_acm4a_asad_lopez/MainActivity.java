@@ -2,6 +2,7 @@ package com.example.parcial_1_am_acm4a_asad_lopez;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -54,12 +55,25 @@ public class MainActivity extends AppCompatActivity {
         miBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Toast.makeText(MainActivity.this, "Opcioj seleccionada", Toast.LENGTH_SHORT).show();
-                //asocio con un nuevo activity
+                //aca capturo la opcion seleccionada en cada spinner
+                CharSequence diaSeleccionado= (CharSequence) spinner1.getSelectedItem();
+                CharSequence actividadSeleccionada=(CharSequence) spinner2.getSelectedItem();
+
 
                 //si selecciono lunes como dia y visitas guiadas como actividad
-                Intent intent = new Intent(MainActivity.this, lunes_visitas.class);
-                startActivity(intent);
+                if(diaSeleccionado.equals("Lunes") && actividadSeleccionada.equals("Visitas guiadas")){
+                    Intent intent = new Intent(MainActivity.this, lunes_visitas.class);
+                    startActivity(intent);
+                }else{//Seba, aca pone un else if con tu opcion despues este else
+                   // Toast.makeText(this, "seleccione una opcion valida").show();
+                    Toast toast;
+                    int duracion = Toast.LENGTH_SHORT;
+                    String mensaje="No hay actividades en el dia seleccionado";
+                    toast = Toast.makeText(getApplicationContext(),mensaje, duracion);
+                    toast.show();
+
+                }
+
 
                 //si selecciono martes y gastronomia
         }
