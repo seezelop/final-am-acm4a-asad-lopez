@@ -47,7 +47,7 @@
                 android:text="@string/footer_sugerencias"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="10sp"
+                android:textSize="8sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -60,10 +60,10 @@
                 android:layout_marginBottom="56dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.104"
+                app:layout_constraintHorizontal_bias="0.137"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.151"
+                app:layout_constraintVertical_bias="0.19"
                 app:srcCompat="@drawable/correo_transparente" />
 
             <TextView
@@ -78,6 +78,32 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.2" />
+
+            <LinearLayout
+                android:id="@+id/linear_WhatsApp"
+                android:layout_width="186dp"
+                android:layout_height="62dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/footer_descripcion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/correo_descr">
+
+                <ImageView
+                    android:id="@+id/whatsApp_icom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/whatsAppTransparente" />
+
+                <TextView
+                    android:id="@+id/whatsApp_number"
+                    android:layout_width="258dp"
+                    android:layout_height="21dp"
+                    android:layout_weight="1"
+                    android:text="5491150500147"
+                    android:textSize="10sp" />
+            </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
