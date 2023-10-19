@@ -104,6 +104,18 @@
                     android:text="5491150500147"
                     android:textSize="10sp" />
             </LinearLayout>
+
+            <ImageView
+                android:id="@+id/icon_ba"
+                android:layout_width="178dp"
+                android:layout_height="110dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/correo_descr"
+                app:layout_constraintHorizontal_bias="0.621"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ba_transp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
