@@ -41,17 +41,17 @@
 
             <TextView
                 android:id="@+id/footer_descripcion"
-                android:layout_width="87dp"
-                android:layout_height="86dp"
-                android:layout_marginStart="268dp"
+                android:layout_width="136dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="260dp"
                 android:text="@string/footer_sugerencias"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.868" />
+                app:layout_constraintVertical_bias="1.0" />
 
             <ImageView
                 android:id="@+id/icon_email"
@@ -171,7 +171,7 @@
             <Button
                 android:id="@+id/btn_contenido_buscar"
                 android:layout_width="160dp"
-                android:layout_height="44dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="121dp"
                 android:layout_marginEnd="100dp"
@@ -179,6 +179,7 @@
                 android:backgroundTint="@color/orange"
                 android:text="@string/btn_contenido_buscar"
                 android:textColor="@color/black"
+                android:textSize="16sp"
                 app:cornerRadius="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -220,7 +221,7 @@
             <Spinner
                 android:id="@+id/opciones_dia"
                 android:layout_width="207dp"
-                android:layout_height="23dp"
+                android:layout_height="48dp"
                 android:layout_marginBottom="8dp"
                 android:gravity="bottom"
                 app:layout_constraintBottom_toTopOf="@+id/contenido_tipoAct"
@@ -244,7 +245,7 @@
             <Spinner
                 android:id="@+id/opciones_actividad"
                 android:layout_width="209dp"
-                android:layout_height="26dp"
+                android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
                 app:layout_constraintBottom_toTopOf="@+id/btn_contenido_buscar"
                 app:layout_constraintEnd_toEndOf="parent"
