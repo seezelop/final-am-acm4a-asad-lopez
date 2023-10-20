@@ -43,7 +43,7 @@
                 android:id="@+id/footer_descripcion"
                 android:layout_width="87dp"
                 android:layout_height="86dp"
-                android:layout_marginStart="272dp"
+                android:layout_marginStart="268dp"
                 android:text="@string/footer_sugerencias"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -51,7 +51,29 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.605" />
+                app:layout_constraintVertical_bias="0.868" />
+
+            <ImageView
+                android:id="@+id/icon_email"
+                android:layout_width="89dp"
+                android:layout_height="60dp"
+                app:layout_constraintBottom_toTopOf="@+id/icon_whats"
+                app:layout_constraintEnd_toStartOf="@+id/footer_destacados"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/correo_transparente" />
+
+            <ImageView
+                android:id="@+id/icon_whats"
+                android:layout_width="90dp"
+                android:layout_height="56dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/footer_descripcion"
+                app:layout_constraintHorizontal_bias="0.224"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icon_email"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/whats" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
