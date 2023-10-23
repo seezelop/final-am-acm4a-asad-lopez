@@ -41,33 +41,106 @@
 
             <TextView
                 android:id="@+id/footer_descripcion"
-                android:layout_width="87dp"
-                android:layout_height="86dp"
-                android:layout_marginStart="272dp"
+                android:layout_width="136dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="260dp"
                 android:text="@string/footer_sugerencias"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.605" />
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/icon_email"
+                android:layout_width="48dp"
+                android:layout_height="45dp"
+                app:layout_constraintBottom_toTopOf="@+id/icon_whats"
+                app:layout_constraintEnd_toStartOf="@+id/footer_destacados"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/correo_transparente" />
+
+            <ImageView
+                android:id="@+id/icon_whats"
+                android:layout_width="90dp"
+                android:layout_height="56dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/footer_descripcion"
+                app:layout_constraintHorizontal_bias="0.224"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icon_email"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/whats" />
+
+            <ImageView
+                android:id="@+id/icon_BA"
+                android:layout_width="128dp"
+                android:layout_height="99dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icon_whats"
+                app:layout_constraintHorizontal_bias="0.488"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icon_email"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ba_transp" />
+
+            <TextView
+                android:id="@+id/text_turismo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="turismo_caba@gobierno.com.ar"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toTopOf="@+id/icon_email"
+                app:layout_constraintEnd_toStartOf="@+id/footer_descripcion"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/icon_email"
+                app:layout_constraintTop_toBottomOf="@+id/footer_destacados"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:text="5491150500147"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/footer_descripcion"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toEndOf="@+id/icon_whats"
+                app:layout_constraintTop_toBottomOf="@+id/icon_whats"
+                app:layout_constraintVertical_bias="1.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
         android:layout_width="414dp"
         android:layout_height="60dp"
         android:background="@color/orange"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-    </LinearLayout>
+        <ImageView
+            android:id="@+id/icon_hambur"
+            android:layout_width="128dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/icon_hambur" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:id="@+id/contenido"
@@ -103,7 +176,7 @@
             <Button
                 android:id="@+id/btn_contenido_buscar"
                 android:layout_width="160dp"
-                android:layout_height="44dp"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="121dp"
                 android:layout_marginEnd="100dp"
@@ -111,6 +184,7 @@
                 android:backgroundTint="@color/orange"
                 android:text="@string/btn_contenido_buscar"
                 android:textColor="@color/black"
+                android:textSize="16sp"
                 app:cornerRadius="0dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -152,7 +226,7 @@
             <Spinner
                 android:id="@+id/opciones_dia"
                 android:layout_width="207dp"
-                android:layout_height="23dp"
+                android:layout_height="48dp"
                 android:layout_marginBottom="8dp"
                 android:gravity="bottom"
                 app:layout_constraintBottom_toTopOf="@+id/contenido_tipoAct"
@@ -176,7 +250,7 @@
             <Spinner
                 android:id="@+id/opciones_actividad"
                 android:layout_width="209dp"
-                android:layout_height="26dp"
+                android:layout_height="48dp"
                 android:layout_marginBottom="12dp"
                 app:layout_constraintBottom_toTopOf="@+id/btn_contenido_buscar"
                 app:layout_constraintEnd_toEndOf="parent"
