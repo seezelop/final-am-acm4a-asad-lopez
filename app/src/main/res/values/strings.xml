@@ -23,5 +23,7 @@
     <string name="descripcion_icono_correo">icono correo</string>
     <string name="descripcion_icono_whats">icono whatsapp</string>
     <string name="descripcion_icono_ba">icono BA</string>
+    <string name="mail_turismo">turismo_caba@gobierno.com.ar</string>
+    <string name="telefono_contacto">5491150500147</string>
 
 </resources>
