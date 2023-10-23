@@ -61,7 +61,8 @@
                 app:layout_constraintEnd_toStartOf="@+id/footer_destacados"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/correo_transparente" />
+                app:srcCompat="@drawable/correo_transparente"
+                android:contentDescription="@string/descripcion_icono_correo" />
 
             <ImageView
                 android:id="@+id/icon_whats"
@@ -73,7 +74,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/icon_email"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/whats" />
+                app:srcCompat="@drawable/whats"
+                android:contentDescription="@string/descripcion_icono_whats" />
 
             <ImageView
                 android:id="@+id/icon_BA"
@@ -85,7 +87,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/icon_email"
                 app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/ba_transp" />
+                app:srcCompat="@drawable/ba_transp"
+                android:contentDescription="@string/descripcion_icono_ba" />
 
             <TextView
                 android:id="@+id/text_turismo"

@@ -20,5 +20,8 @@
     <string name="horarios_dias_bus">Todos los días, de 9 a 17 h. (el amarillo) y de 9:30 a 18 h (el rojo)</string>
     <string name="direccion_buses">Av. Quintana 596 (el amarillo) y Diagonal Roque Sáenz Peña 728 (el rojo)</string>
     <string name="texto_descripcion_buses">Una gran forma de recorrer los barrios más emblemáticos de la Ciudad y tener una gran vista panorámica. Dos circuitos, amarillo y rojo, para que puedas apreciar lugares históricos, espacios culturales y zonas únicas. Podés ascender y descender de los buses todas las veces que desees. Consultá la promoción que ofrecen en Vacaciones de Invierno,</string>
+    <string name="descripcion_icono_correo">icono correo</string>
+    <string name="descripcion_icono_whats">icono whatsapp</string>
+    <string name="descripcion_icono_ba">icono BA</string>
 
 </resources>
