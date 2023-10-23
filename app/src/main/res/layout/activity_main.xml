@@ -201,7 +201,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/patio" />
+                app:srcCompat="@drawable/patio"
+                android:contentDescription="@string/descripcion_imagen_contenido" />
 
             <TextView
                 android:id="@+id/contenido_dia"
