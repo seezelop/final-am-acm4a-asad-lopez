@@ -12,6 +12,7 @@
         android:layout_height="124dp"
         android:layout_marginTop="498dp"
         android:background="@color/orange"
+        android:baselineAligned="true"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +30,7 @@
                 android:id="@+id/footer_destacados"
                 android:layout_width="286dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="168dp"
+                android:layout_marginStart="200dp"
                 android:layout_marginTop="4dp"
                 android:layout_weight="1"
                 android:text="@string/footer_principales"
@@ -43,7 +44,7 @@
                 android:id="@+id/footer_descripcion"
                 android:layout_width="136dp"
                 android:layout_height="90dp"
-                android:layout_marginStart="260dp"
+                android:layout_marginStart="276dp"
                 android:text="@string/footer_sugerencias"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -55,50 +56,50 @@
 
             <ImageView
                 android:id="@+id/icon_email"
-                android:layout_width="48dp"
-                android:layout_height="45dp"
+                android:layout_width="53dp"
+                android:layout_height="54dp"
+                android:contentDescription="@string/descripcion_icono_correo"
                 app:layout_constraintBottom_toTopOf="@+id/icon_whats"
                 app:layout_constraintEnd_toStartOf="@+id/footer_destacados"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/correo_transparente"
-                android:contentDescription="@string/descripcion_icono_correo"/>
+                app:srcCompat="@drawable/correo_transparente" />
 
             <ImageView
                 android:id="@+id/icon_whats"
-                android:layout_width="90dp"
-                android:layout_height="56dp"
+                android:layout_width="94dp"
+                android:layout_height="57dp"
+                android:contentDescription="@string/descripcion_icono_whats"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/footer_descripcion"
                 app:layout_constraintHorizontal_bias="0.224"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/icon_email"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/whats"
-                android:contentDescription="@string/descripcion_icono_whats"/>
+                app:srcCompat="@drawable/whats" />
 
             <ImageView
                 android:id="@+id/icon_BA"
                 android:layout_width="128dp"
                 android:layout_height="99dp"
+                android:contentDescription="@string/descripcion_icono_ba"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/icon_whats"
                 app:layout_constraintHorizontal_bias="0.488"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/icon_email"
                 app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/ba_transp"
-                android:contentDescription="@string/descripcion_icono_ba" />
+                app:srcCompat="@drawable/ba_transp" />
 
             <TextView
                 android:id="@+id/text_turismo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/mail_turismo"
-                android:textSize="10sp"
+                android:textSize="11sp"
                 app:layout_constraintBottom_toTopOf="@+id/icon_email"
                 app:layout_constraintEnd_toStartOf="@+id/footer_descripcion"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/icon_email"
                 app:layout_constraintTop_toBottomOf="@+id/footer_destacados"
                 app:layout_constraintVertical_bias="0.0" />
@@ -110,13 +111,13 @@
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="32dp"
                 android:text="@string/telefono_contacto"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/footer_descripcion"
-                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/icon_whats"
                 app:layout_constraintTop_toBottomOf="@+id/icon_whats"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="0.977" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
@@ -164,7 +165,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/titulo_contenido"
                 android:layout_width="225dp"
                 android:layout_height="wrap_content"
                 android:text="@string/contenido_titulo"
@@ -202,7 +203,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/patio" />
+                app:srcCompat="@drawable/patio"
+                android:contentDescription="@string/descripcion_imagen_caba"/>
 
             <TextView
                 android:id="@+id/contenido_dia"

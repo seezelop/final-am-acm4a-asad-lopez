@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -24,10 +25,15 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinner1;
     private Spinner spinner2;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+         TextView contenido_d = findViewById(R.id.contenido_dia);
+         contenido_d.setText(R.string.contenido_dia);
 
         miBoton = findViewById(R.id.btn_contenido_buscar);
         spinner1 = findViewById(R.id.opciones_dia);

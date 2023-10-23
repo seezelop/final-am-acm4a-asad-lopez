@@ -26,5 +26,6 @@
     <string name="mail_turismo">turismo_caba@gobierno.com.ar</string>
     <string name="telefono_contacto">5491150500147</string>
     <string name="descripcion_icono_hamburger">icono desplegable</string>
+    <string name="descripcion_imagen_caba">imagen patio caba</string>
 
 </resources>
