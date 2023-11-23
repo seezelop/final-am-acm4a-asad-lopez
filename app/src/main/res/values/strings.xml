@@ -14,7 +14,9 @@
     <string name="primer_subtitulo">¿Cuándo?</string>
     <string name="donde">¿Dónde?</string>
     <string name="horario_colon">De lunes a viernes, de 10 a 16:45 h. Sábado y domingo, de 11 a 16:45 h.</string>
-    <string name="descripcion_colon">Recorré los rincones del Teatro Colón con quienes pueden enseñarte todos sus secretos e historia. Van a guiarte por la sala, el foyer principal, la galería de bustos y el salón dorado , y te contarán los detalles de la arquitectura de este magnífico edificio. El paseo dura aproximadamente unos 50 minutos.</string>
+    <string name="descripcion_colon">Recorré los rincones del Teatro Colón con quienes pueden enseñarte todos sus secretos e historia.
+        Van a guiarte por la sala, el foyer principal, la galería de bustos y el salón dorado , y te contarán los detalles de la arquitectura de este magnífico edificio.
+        El paseo dura aproximadamente unos 50 minutos.</string>
     <string name="direccion_colon">Cerrito 650</string>
     <string name="bus_turistico">Bus turistico</string>
     <string name="horarios_dias_bus">Todos los días, de 9 a 17 h. (el amarillo) y de 9:30 a 18 h (el rojo)</string>
