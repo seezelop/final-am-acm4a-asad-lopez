@@ -34,7 +34,7 @@ public class lunes_visitas extends AppCompatActivity {
         horarios.add("Todos los días, de 9 a 17 h. (el amarillo) y de 9:30 a 18 h (el rojo)");
         hora_dias_colon=findViewById(R.id.hora_dias_colon);
         hora_dias_colon.setText(horarios.get(0));/*aca se agrega horarios y dias del colon*/
-        horario_bus=findViewById(R.id.direccion_bus);
+        horario_bus=findViewById(R.id.horario_dias_buses);
         horario_bus.setText(horarios.get(1));/*aca se agrega horarios y dias del bus*/
 
         List<String> descripciones=new ArrayList<String>();
