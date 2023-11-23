@@ -135,7 +135,7 @@
                     android:id="@+id/direccion_bus"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text=""
+                    android:text="@string/direccion_buses"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
 
