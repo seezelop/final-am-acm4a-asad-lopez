@@ -61,27 +61,25 @@ public class MainActivity extends AppCompatActivity {
         miBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //aca capturo la opcion seleccionada en cada spinner
-                CharSequence diaSeleccionado= (CharSequence) spinner1.getSelectedItem();
-                CharSequence actividadSeleccionada=(CharSequence) spinner2.getSelectedItem();
+                // Captura la opción seleccionada en cada spinner
+                CharSequence diaSeleccionado = (CharSequence) spinner1.getSelectedItem();
+                CharSequence actividadSeleccionada = (CharSequence) spinner2.getSelectedItem();
 
-
-                //si selecciono lunes como dia y visitas guiadas como actividad
-                if(diaSeleccionado.equals("Lunes") && actividadSeleccionada.equals("Visitas guiadas")){
+                // Verifica las opciones seleccionadas
+                if (diaSeleccionado.equals("Lunes") && actividadSeleccionada.equals("Visitas guiadas")) {
                     Intent intent = new Intent(MainActivity.this, lunes_visitas.class);
                     startActivity(intent);
-                }else{//Seba, aca pone un else if con tu opcion despues este else
-                    // Toast.makeText(this, "seleccione una opcion valida").show();
+                } else if (diaSeleccionado.equals("Martes") && actividadSeleccionada.equals("Gastronomia")) {
+                    Intent intent = new Intent(MainActivity.this, martes_gastronomia.class);
+                    startActivity(intent);
+                } else {
+                    // Otras opciones o manejo de error
                     Toast toast;
                     int duracion = Toast.LENGTH_SHORT;
-                    String mensaje="No hay actividades en el dia seleccionado";
-                    toast = Toast.makeText(getApplicationContext(),mensaje, duracion);
+                    String mensaje = "No hay actividades en el día seleccionado";
+                    toast = Toast.makeText(getApplicationContext(), mensaje, duracion);
                     toast.show();
-
                 }
-
-
-                //si selecciono martes y gastronomia
             }
         });
     }
