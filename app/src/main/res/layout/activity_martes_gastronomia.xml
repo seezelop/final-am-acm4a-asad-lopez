@@ -16,7 +16,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="182dp"
         android:layout_marginBottom="20dp"
-        android:text="Mes del Kimchi en el Mercat Villa Crespo"
+        android:text="Evento destacado del dia"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -34,59 +34,50 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
         android:contextClickable="false"
-        app:layout_constraintBottom_toTopOf="@+id/descripcionGastronomia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloGastronomia"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/food" />
 
-    <TextView
-        android:id="@+id/descripcionGastronomia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="274dp"
-        android:text="Pasá por el Mercat Villa Crespo durante todo noviembre y descubrí por qué el Kimchi es el plato más querido de Corea. El mercado promete convertirse en el epicentro de la K-Food en noviembre con distintas masterclasses, mini street food, pops up y más propuestas. Consultá la agenda detallada en las redes de Mercat Villa Crespo."
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenGastronomia"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/leyendaGastro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="15dp"
-        android:text="Durante noviembre"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/leyenda2Gastro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagenGastronomia"
-        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/leyenda2Gastro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="16dp"
         android:text="Mercat Villa Crespo. Thames 747."
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/descripcionGastronomia"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagenGastronomia" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leyenda2Gastro">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:text="Abrió sus puertas al público Mercat, un espacio de encuentro donde poder disfrutar de la comida y descubrir productos a precios accesibles.  Mercat puede visitarse los martes, miércoles, jueves y domingos, de 11 a 20 hs y los sábados, de 11 a 24. Los lunes permanecerá cerrado.  En un espacio de 2700 metros cuadrados y 3 plantas, donde habrá lugar para 38 locales, la propuesta se inspira en los más icónicos mercados urbanos del mundo y será mixta: habrá una combinación de productos y gastronomía conceptual. Con una estética industrial y urbanismo contemporáneo, allí confluirán emprendedores, talleres, precios accesibles y cercanía con el productor local.  Llega al barrio de Villa Crespo para reversionar el concepto tradicional de mercado y abrir el debate sobre la alimentación actual. Con una estética bien industrial, el edificio de Mercat -ubicado en Thames 747, CABA– cuenta con 2700mts2, se divide en tres plantas, posee un espacio para productores locales especialmente seleccionados, y un auditorio y un foyer que marcarán tendencia por el abanico de contenidos interesantes que presentarán.   Mercat busca imponerse como la evolución de la gastronomía y transformarse en un concentrador cultural.  Sobre Mercat: Mercat Villa Crespo es el primer mercado gastronómico de la Ciudad de Buenos Aires. Con el espíritu MENOS SÚPER, MÁS MERCADO, propone una experiencia creativa y de vanguardia en el corazón de Villa Crespo.  El edificio tiene una estética bien industrial. Cuenta con 2700mts2, dividido en tres plantas, un auditorio y un foyer que marcarán tendencia por el abanico de contenidos interesantes que presentarán. Mercat busca imponerse como la evolución de la gastronomía y transformarse en un concentrador cultural.  Mercat reúne a 27 emprendedores que, con sus productos, representan los alimentos típicos de la identidad argentina, buscando una comercialización directa y sin intermediarios, cuya idea es generar un comercio más justo acercando el consumidor al productor directo.   LOCATARIOS Y PRODUCTORES En Mercat solo hay una opción de cada rubro, con propuestas experimentales e innovadoras y -en muchos casos- para algunos este es su primer local. Solo en Mercat se podrá disfrutar del exquisito café de especialidad de Grano Santo; comprar frutas y verduras sin agrotóxicos y por kilo -y no bolsón- en Tierra Orgánica; y acceder a carne pastoril en Pastizales Nativos, que promueve la ganadería responsable, donde el suelo y la biodiversidad son elementos fundamentales.   La chocolatier y especialista en cacao, Lorena Galasso, tendrá su primer local de Las Romeas y con SabeCacao incursionará con novedosas e increíbles bebidas frías y calientes y platos dulces y salados en los que la semilla y el fruto del árbol Theobroma Cacao serán protagonistas.   Let it V ofrecerá comida fusión 100% plant based y gluten free; y Haulani propone un helado a base de leche y aceite de coco. Habrá dumplings, baos, buns, ramen y otros platos con influencia de la gastronomía asiática de la mano de Koi; y Veggie estará con su concepto de comida rápida vegetariana del medio oriente. La tradición italiana se encontrará en Brocca Pasta con sus pastas frescas y rellenas que se podrán llevar o comer en el lugar, y en Brocca Pasticcería con su increíble pastelería.   El experto conocedor de quesos, Remo Valenti, vuelve a atender al público después de años en Remo. Y lo hará bajo dos conceptos bien definidos: “al despacho”, donde solo estarán a la venta los quesos, jamones y salames que él considere que están en su punto justo; y “a la barra”, donde -tal como lo soñó su padre- clientes y amigos podrán darse un gustito al instante y lograr un momento único sin tener que esperar a llegar a casa.   La panadería orgánica de masa madre tendrá su lugar con Atelier Fuerza; y en Moisha Bakery se podrá disfrutar de panes de la cultura judía -tradicionales clásicos y reversiones- como jalá, bagel, pretzel y productos de pastelería y dulces típicos como el baklavá.   El streetfood milenario de Transylvania llega de la mano de Erdely’s con sus Kürtos, un dulce crujiente por fuera y esponjoso por dentro, que se elabora en el momento y se entrega humeante en sus diferentes versiones. En Dulce de leche and Co, se podrán encontrar los mejores dulces de leche y alfajores de pequeños productores de todas las regiones del país; y las tradicionales empanadas tucumanas se podrán probar en La Casa de Tafí.   En Lado A habrá charcutería y conservas, pastrami, una amplia variedad de salchichas artesanales y hamburguesas de carne de pastura en pan casero. Otro proyecto muy interesante son los tacos de El Diablito, buena cocina mexicana respetando el producto local de Buenos Aires.   En la tienda gourmet Naccato Market habrá gran variedad de alimentos de todo el mundo, saludables y de nicho: aceites de hongos, trufas, y variedades de sirachas. Todos los productos de dietética se encontrarán en Ker Tienda Saludable; y en Especias Berger todas las especias del interior del país, aceites de oliva, dip de cayena, y salsas picantes estilo tabasco que son una delicia. Además, en Épica existirá la posibilidad de acceder a alimentos de vanguardia bajo un esquema en el que se podrá jugar y armar bowls de acaí dulces y salados personalizándolos con distintas bases y toppings.   Contará con la mejor cerveza tirada en La Choppería y también estará presente Stella Artois. Algunos locales ofrecerán sus propias variedades de bebidas artesanales; y Vico Wine Bar estará presente con una selección boutique de los mejores vinos de su portfolio -tanto para el vino en copa como en botella-, cócteles, y vermouth y otras bebidas tiradas. " />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
