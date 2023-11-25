@@ -21,5 +21,7 @@
     <string name="telefono_contacto">5491150500147</string>
     <string name="descripcion_icono_hamburger">icono desplegable</string>
     <string name="descripcion_imagen_caba">imagen patio caba</string>
+    <string name="ofertas_gastronomicas">Ofertas gastronómicas para este día</string>
+
 
 </resources>
