@@ -20,7 +20,7 @@ public class martes_gastronomia extends AppCompatActivity {
         imageView = findViewById(R.id.imagenGastronomia);
 
         // Establecer el texto del TextView desde los recursos de cadena
-        textView.setText(getString(R.string.ofertas_gastronomicas));
+        textView.setText(getString(R.string.destacado_gastronomia));
 
         imageView.setImageResource(R.drawable.food);
 
