@@ -1,7 +1,10 @@
 package com.example.parcial_1_am_acm4a_asad_lopez;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -21,4 +24,10 @@ public class lunes_visitas extends AppCompatActivity {
 
         imageView.setImageResource(R.drawable.planetario);
     }
+    // activar boton enviar
+    public void enviar(View view){
+        Intent enviar= new Intent(this, greeting.class);
+        startActivity(enviar);
+    }
+
 }
