@@ -36,6 +36,7 @@
     <string name="hint_mensaje">Mensaje</string>
     <string name="button_enviar">Enviar</string>
     <string name="agradecimiento"> Muchas gracias por enviarnos tus datos.</string>
+    <string name="button_regresar">Regresar</string>
 
 
 </resources>
