@@ -16,7 +16,7 @@ public class greeting extends AppCompatActivity {
 
     // activar boton regresar
     public void regresar(View view){
-        Intent regresar= new Intent(this, martes_visitas.class);
+        Intent regresar= new Intent(this, MainActivity.class);
         startActivity(regresar);
     }
 
