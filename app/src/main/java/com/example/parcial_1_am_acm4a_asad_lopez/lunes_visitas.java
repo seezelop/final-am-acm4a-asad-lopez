@@ -16,9 +16,9 @@ public class lunes_visitas extends AppCompatActivity {
         setContentView(R.layout.activity_lunes_visitas);
 
 
+        textView = findViewById(R.id.formInstruccion);
+        imageView = findViewById(R.id.imagenVisitas);
 
-
-
+        imageView.setImageResource(R.drawable.planetario);
     }
 }
-

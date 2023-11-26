@@ -28,5 +28,13 @@
     <string name="tituloVisitas">Evento destacado de visitas</string>
     <string name="description_imagen_visita">Descripción de la imagen visita</string>
     <string name="direccioneEvento_visitas">Av. Sarmiento y Av. Belisario Roldan.</string>
-    <string name="linearDescripcionVisita">Completa el formulario para que podamos realizarte una reserva especial. </string>
+    <string name="linearDescripcionVisita">Completa el formulario para que podamos realizarte una reserva especial para poder conocerlo por dentro. </string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_apellido">Apellido</string>
+    <string name="hint_correo">Correo Electrónico</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_mensaje">Mensaje</string>
+    <string name="button_enviar">Enviar</string>
+
+
 </resources>
