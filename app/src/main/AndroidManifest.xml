@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Parcial1amacm4aasadlopez"
         tools:targetApi="31">
         <activity
+            android:name=".martes_visitas"
+            android:exported="false" />
+        <activity
             android:name=".greeting"
             android:exported="false" />
         <activity

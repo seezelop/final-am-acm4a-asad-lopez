@@ -25,8 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinner1;
     private Spinner spinner2;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,16 +42,14 @@ public class MainActivity extends AppCompatActivity {
         dias.add("Lunes");
         dias.add("Martes");
 
-        //arraylist segundo spinner
+        // arraylist segundo spinner
         ArrayList<String> actividades = new ArrayList<>();
         actividades.add("Visitas guiadas");
         actividades.add("Gastronomia");
-        //actividades.add("Deportes");
 
         // 1 adaptador por cada spinner
         ArrayAdapter<String> adapter1 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, dias);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, actividades);
-
 
         spinner1.setAdapter(adapter1);
         spinner2.setAdapter(adapter2);
@@ -71,6 +67,9 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else if (diaSeleccionado.equals("Martes") && actividadSeleccionada.equals("Gastronomia")) {
                     Intent intent = new Intent(MainActivity.this, martes_gastronomia.class);
+                    startActivity(intent);
+                } else if (diaSeleccionado.equals("Martes") && actividadSeleccionada.equals("Visitas guiadas")) {
+                    Intent intent = new Intent(MainActivity.this, martes_visitas.class);
                     startActivity(intent);
                 } else {
                     // Otras opciones o manejo de error
