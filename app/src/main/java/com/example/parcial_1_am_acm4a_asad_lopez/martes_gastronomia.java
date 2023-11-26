@@ -17,7 +17,7 @@ public class martes_gastronomia extends AppCompatActivity {
 
         // Referencias a los elementos de la interfaz
         textView = findViewById(R.id.tituloGastronomia);
-        imageView = findViewById(R.id.imagenGastronomia);
+        imageView = findViewById(R.id.imagenGastro);
 
         // Establecer el texto del TextView desde los recursos de cadena
         textView.setText(getString(R.string.destacado_gastronomia));
