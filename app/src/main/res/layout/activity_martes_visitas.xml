@@ -1,0 +1,134 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/visitas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/tituloVisitas"
+        android:layout_width="366dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="182dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/tituloVisitas"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imagenVisitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imagenVisitas"
+        android:layout_width="399dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/description_imagen_visita"
+        android:contextClickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloVisitas"
+        app:srcCompat="@drawable/planetario" />
+
+    <TextView
+        android:id="@+id/direccionEvento_visitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/direccioneEvento_visitas"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenVisitas" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccionEvento_visitas">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Formulario de contacto -->
+            <EditText
+                android:id="@+id/editTextNombre"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="name"
+                android:hint="@string/hint_nombre"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextApellido"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="name"
+                android:hint="@string/hint_apellido"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="emailAddress"
+                android:hint="@string/hint_correo"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:autofillHints="tel"
+                android:hint="@string/hint_telefono"
+                android:inputType="phone"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editTextMensaje"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:autofillHints="text"
+                android:hint="@string/hint_mensaje"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/botonEnviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="enviar"
+                android:text="@string/button_enviar"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/formInstruccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/linearDescripcionVisita"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/direccionEvento_visitas" />
+</androidx.constraintlayout.widget.ConstraintLayout>
