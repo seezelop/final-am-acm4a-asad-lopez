@@ -11,7 +11,10 @@
         android:layout_height="match_parent"
         android:background="@color/orange"
         android:scrollbarStyle="outsideOverlay"
-        android:scrollbars="vertical">
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="70dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -90,8 +93,11 @@
             <LinearLayout
                 android:layout_width="241dp"
                 android:layout_height="580dp"
+                android:layout_marginStart="92dp"
                 android:background="@drawable/color_borde_layout"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
 
                 <TextView
                     android:id="@+id/titulo_2"
@@ -106,14 +112,16 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                 </TextView>
+
                 <TextView
                     android:id="@+id/subtitulo1_bus"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/primer_subtitulo"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/horario_dias_buses"
                     android:layout_width="match_parent"
@@ -128,8 +136,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/donde"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/direccion_bus"
@@ -148,13 +156,19 @@
                     android:textSize="18sp" />
 
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
             </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
     </ScrollView>
