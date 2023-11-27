@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_martes_gastronomia">
+    tools:context=".martes_gastronomia">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
