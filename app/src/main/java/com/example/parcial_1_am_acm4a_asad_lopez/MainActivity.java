@@ -70,7 +70,14 @@ public class MainActivity extends AppCompatActivity {
                 if(diaSeleccionado.equals("Lunes") && actividadSeleccionada.equals("Visitas guiadas")){
                     Intent intent = new Intent(MainActivity.this, lunes_visitas.class);
                     startActivity(intent);
-                }else{//Seba, aca pone un else if con tu opcion despues este else
+                }  //si selecciono martes y gastronomia
+                else if (diaSeleccionado.equals("Martes") && actividadSeleccionada.equals("Gastronomia")) {
+                    Intent intent = new Intent(MainActivity.this, martes_gastronomia.class);
+                    startActivity(intent);
+                } else if (diaSeleccionado.equals("Martes") && actividadSeleccionada.equals("Visitas guiadas")) {
+                    Intent intent = new Intent(MainActivity.this, martes_visitas.class);
+                    startActivity(intent);
+                } else{
                    // Toast.makeText(this, "seleccione una opcion valida").show();
                     Toast toast;
                     int duracion = Toast.LENGTH_SHORT;
@@ -81,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-                //si selecciono martes y gastronomia
+
         }
         });
     }
