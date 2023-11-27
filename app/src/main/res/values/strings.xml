@@ -21,5 +21,22 @@
     <string name="telefono_contacto">5491150500147</string>
     <string name="descripcion_icono_hamburger">icono desplegable</string>
     <string name="descripcion_imagen_caba">imagen patio caba</string>
+    <string name="destacado_gastronomia">Evento destacado del día</string>
+    <string name="description_imagen_gastro">Descripción de la imagen gastronómica</string>
+    <string name="direccionEvento_gastronomia">Mercat Villa Crespo. Thames 747.</string>
+    <string name="descripcionGastro">Abrió sus puertas al público Mercat, un espacio de encuentro donde poder disfrutar de la comida y descubrir productos a precios accesibles.  Mercat puede visitarse los martes, miércoles, jueves y domingos, de 11 a 20 hs y los sábados, de 11 a 24. Los lunes permanecerá cerrado.  En un espacio de 2700 metros cuadrados y 3 plantas, donde habrá lugar para 38 locales, la propuesta se inspira en los más icónicos mercados urbanos del mundo y será mixta: habrá una combinación de productos y gastronomía conceptual. Los lunes permanecerá cerrado.  En un espacio de 2700 metros cuadrados y 3 plantas, donde habrá lugar para 38 locales, la propuesta se inspira en los más icónicos mercados urbanos del mundo y será mixta: habrá una combinación. Los lunes permanecerá cerrado.  En un espacio de 2700 metros cuadrados y 3 plantas, donde habrá lugar para 38 locales, la propuesta se inspira en los más icónicos mercados urbanos del mundo y será mixta: habrá una combinación</string>
+    <string name="tituloVisitas">Evento destacado de visitas</string>
+    <string name="description_imagen_visita">Descripción de la imagen visita</string>
+    <string name="direccioneEvento_visitas">Av. Sarmiento y Av. Belisario Roldan.</string>
+    <string name="linearDescripcionVisita">Completa el formulario para que podamos realizarte una reserva especial para poder conocerlo por dentro. </string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_apellido">Apellido</string>
+    <string name="hint_correo">Correo Electrónico</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_mensaje">Mensaje</string>
+    <string name="button_enviar">Enviar</string>
+    <string name="agradecimiento"> Muchas gracias por enviarnos tus datos.</string>
+    <string name="button_regresar">Regresar</string>
+
 
 </resources>
