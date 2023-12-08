@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inicio_sesion"
+    app:startDestination="@+id/menu_logueo">
+
+    <fragment
+        android:id="@+id/menu_logueo"
+        android:name="com.example.parcial_1_am_acm4a_asad_lopez.inicioSesion"
+        tools:layout="@layout/fragment_inicio_sesion"/>
+
+</navigation>
