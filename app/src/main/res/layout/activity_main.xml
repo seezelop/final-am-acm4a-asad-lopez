@@ -126,7 +126,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="414dp"
         android:layout_height="60dp"
-        android:background="@color/orange"
+        android:background="@color/yellow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -138,14 +138,16 @@
             android:layout_width="128dp"
             android:layout_height="58dp"
             android:layout_weight="1"
+            android:contentDescription="@string/descripcion_icono_hamburger"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/icon_hambur"
-            android:contentDescription="@string/descripcion_icono_hamburger" />
+            app:srcCompat="@drawable/icon_hambur" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
@@ -187,7 +189,7 @@
                 android:layout_marginStart="121dp"
                 android:layout_marginEnd="100dp"
                 android:layout_marginBottom="4dp"
-                android:backgroundTint="@color/orange"
+                android:backgroundTint="@color/yellow"
                 android:text="@string/btn_contenido_buscar"
                 android:textColor="@color/black"
                 android:textSize="16sp"
