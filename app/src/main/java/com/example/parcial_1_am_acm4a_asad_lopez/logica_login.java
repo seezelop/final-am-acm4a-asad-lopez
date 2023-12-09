@@ -50,7 +50,6 @@ public class logica_login extends AppCompatActivity {
         //obtengo lo que el usuario ingreso como contrasena
         String contraUsuario= contra.getText().toString().trim();
 
-        Toast.makeText(logica_login.this, "evento apretado", Toast.LENGTH_SHORT).show();
         //condicional para saber si los campos estan vacios
         if (emailUsuario.isEmpty() || contraUsuario.isEmpty()) {
             Toast.makeText(logica_login.this, "Complete los campos en blanco", Toast.LENGTH_SHORT).show();
