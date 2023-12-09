@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
-    android:backgroundTint="@color/yellow">
+    tools:context=".registrar_usuario">
 
     <ImageView
         android:id="@+id/imagen_logo_ba"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/ba_transp" />
 
     <EditText
-        android:id="@+id/edittext_usuario"
+        android:id="@+id/edittext_usuario_registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imagen_logo_ba" />
 
     <EditText
-        android:id="@+id/edittext_contrasena"
+        android:id="@+id/edittext_contrasena_registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -39,33 +39,18 @@
         android:hint="@string/texto_contrasena"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_usuario" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_usuario_registro" />
 
     <Button
-        android:id="@+id/boton_login"
+        android:id="@+id/boton_registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="89dp"
         android:backgroundTint="@color/black"
-        android:text="@string/texto_iniciar_sesion"
-        android:onClick="iniciar_sesion"
+        android:text="@string/texto_registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_contrasena" />
+        app:layout_constraintTop_toBottomOf="@+id/edittext_contrasena_registro" />
 
-    <TextView
-        android:id="@+id/texto_hacia_registro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        android:layout_marginBottom="28dp"
-        android:text="@string/texto_que_redirige"
-        app:layout_constraintBottom_toTopOf="@+id/boton_login"
-        android:clickable="true"
-        android:onClick="ir_a_registro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.684"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_contrasena" />
 </androidx.constraintlayout.widget.ConstraintLayout>

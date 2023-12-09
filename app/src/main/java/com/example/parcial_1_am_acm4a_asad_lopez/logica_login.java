@@ -36,10 +36,11 @@ public class logica_login extends AppCompatActivity {
         contra=findViewById(R.id.edittext_contrasena);
         boton_inicio=findViewById(R.id.boton_login);
 
+    }
 
-
-
-
+    public void ir_a_registro(View view){
+        Intent intent = new Intent(this, registrar_usuario.class);
+        startActivity(intent);
     }
 
     public void iniciar_sesion(View view) {

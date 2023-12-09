@@ -42,6 +42,8 @@
     <string name="texto_usuario">Usuario</string>
     <string name="texto_contrasena">Contrasena</string>
     <string name="texto_iniciar_sesion">Iniciar sesion</string>
+    <string name="texto_registro">Registrarse</string>
+    <string name="texto_que_redirige">¿Todavia no te registraste? Hace click aca</string>
 
 
 </resources>
