@@ -48,6 +48,7 @@
         android:layout_marginTop="89dp"
         android:backgroundTint="@color/black"
         android:text="@string/texto_iniciar_sesion"
+        android:onClick="iniciar_sesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
