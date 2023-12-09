@@ -1,24 +1,38 @@
 package com.example.parcial_1_am_acm4a_asad_lopez;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class lunes_visitas extends AppCompatActivity {
+public class lunes_visitas extends AppCompatActivity implements OnMapReadyCallback {
     TextView titulo_1;
     TextView hora_dias_colon;
     TextView texto_colon;
     TextView titulo_2;
     TextView descripcion_buses;
     TextView horario_bus;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lunes_visitas);
+
+        SupportMapFragment supportMapFragment=(SupportMapFragment) getSupportFragmentManager().
+                findFragmentById(R.id.mapa_colon);
+        supportMapFragment.getMapAsync(this);
+
 
         List<String> titulos=new ArrayList<String>();
         titulos.add("Visita guiada al colon");
@@ -44,5 +58,15 @@ public class lunes_visitas extends AppCompatActivity {
         texto_colon.setText(descripciones.get(0));/*aca se agrega la descripcion del colon*/
         descripcion_buses=findViewById(R.id.descripcion_buses);
         descripcion_buses.setText(descripciones.get(1));/*aca se agrega la descripcion de los buses*/
+    }
+
+    @Override
+    public void onMapReady(@NonNull GoogleMap googleMap) {
+
+        //coordenadas con la ubicacion del teatro colon
+        LatLng ubicacion = new LatLng(-34.601083333333, -58.383083333333);
+        googleMap.addMarker(new MarkerOptions().position(ubicacion).title("Teatro Colon"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ubicacion, 12));
+
     }
 }

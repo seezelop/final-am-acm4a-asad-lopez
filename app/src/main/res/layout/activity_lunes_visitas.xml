@@ -14,7 +14,8 @@
         android:scrollbars="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="70dp">
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-53dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,7 +26,7 @@
             <LinearLayout
                 android:id="@+id/colon"
                 android:layout_width="241dp"
-                android:layout_height="650dp"
+                android:layout_height="1000dp"
                 android:layout_marginStart="92dp"
                 android:layout_marginBottom="32dp"
                 android:background="@drawable/color_borde_layout"
@@ -89,16 +90,24 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="269dp"
                     app:srcCompat="@drawable/teatro_colon" />
+
+                <fragment
+                    android:id="@+id/mapa_colon"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"></fragment>
 
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/buses"
                 android:layout_width="241dp"
-                android:layout_height="650dp"
+                android:layout_height="1000dp"
                 android:layout_marginStart="92dp"
                 android:layout_marginTop="92dp"
                 android:background="@drawable/color_borde_layout"
@@ -164,14 +173,21 @@
 
                 <ImageView
                     android:id="@+id/fotoBuses"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="241dp"
+                    android:layout_height="227dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginBottom="16dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:srcCompat="@drawable/buses" />
+
+                <fragment
+                    android:id="@+id/fragment_buses"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="334dp"
+                    android:layout_marginTop="25dp"></fragment>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
