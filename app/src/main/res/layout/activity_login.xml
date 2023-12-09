@@ -25,23 +25,21 @@
         android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/texto_usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagen_logo_ba"
-        android:hint="@string/texto_usuario"/>
+        app:layout_constraintTop_toBottomOf="@+id/imagen_logo_ba" />
 
     <EditText
         android:id="@+id/edittext_contrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="102dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
         android:ems="10"
+        android:hint="@string/texto_contrasena"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_usuario"
-        android:hint="@string/texto_contrasena"/>
+        app:layout_constraintTop_toBottomOf="@+id/edittext_usuario" />
 
     <Button
         android:id="@+id/boton_login"
