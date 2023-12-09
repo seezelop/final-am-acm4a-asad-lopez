@@ -25,6 +25,9 @@
             android:name=".lunes_visitas"
             android:exported="false" />
         <activity
+            android:name=".logica_login"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

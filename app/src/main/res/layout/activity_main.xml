@@ -146,8 +146,37 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/icon_hambur" />
+            app:srcCompat="@drawable/icon_hambur"
+            android:onClick="ir_a_inicio_sesion"/>
+
+        <!--androidx.fragment.app.FragmentContainerView
+            android:id="@+id/contenedor_menu"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:defaultNavHost="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /-->
+
+
+
+        <!--com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/botonNavegacion"
+            android:layout_width="414dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="16dp"
+            app:menu="@menu/boton_menu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+        </com.google.android.material.bottomnavigation.BottomNavigationView-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -181,6 +210,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.478"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <Button
