@@ -21,9 +21,6 @@
             android:name=".registrar_usuario"
             android:exported="false" />
         <activity
-            android:name=".mapa_buses_turisticos"
-            android:exported="false" />
-        <activity
             android:name=".martes_visitas"
             android:exported="false" />
         <activity
