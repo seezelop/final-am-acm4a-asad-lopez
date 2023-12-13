@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199196411824",
+    "project_id": "turismoba-9f368",
+    "storage_bucket": "turismoba-9f368.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199196411824:android:4badb27b0afa38eabff875",
+        "android_client_info": {
+          "package_name": "com.example.parcial_1_am_acm4a_asad_lopez"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqANgZlHCIHeE4xC30uqUEHfYVfG9lZcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
