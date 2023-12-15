@@ -64,23 +64,23 @@ public class logica_login extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
-                //pregunta si hay una sesion
+                // Pregunta si hay una sesión
                 if(task.isSuccessful()){
-                    finish();
-                    startActivity(new Intent(logica_login.this, MainActivity.class));
+                    // Redirige a activity_login_exitoso
+                    Intent intent = new Intent(logica_login.this, login_exitoso.class);
+                    startActivity(intent);
+                    finish(); // Cierra la actividad actual para evitar volver a ella desde activity_login_exitoso
                     Toast.makeText(logica_login.this, "Bienvenido!", Toast.LENGTH_SHORT).show();
-                }else {
-                    Toast.makeText(logica_login.this, "error" + task.getException(), Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(logica_login.this, "Error: " + task.getException(), Toast.LENGTH_SHORT).show();
                 }
             }
-            //linea 67 muestra los errores al loguearse
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Toast.makeText(logica_login.this, "error al iniciar sesion", Toast.LENGTH_SHORT).show();
-
+                Toast.makeText(logica_login.this, "Error al iniciar sesión", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
+
 }
