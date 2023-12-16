@@ -45,6 +45,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".login_exitoso">
+        </activity>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCQd04GD1fzc7S0V6TdGzCCOeGbivPt5w0" />

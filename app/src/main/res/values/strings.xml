@@ -37,13 +37,14 @@
     <string name="button_enviar">Enviar</string>
     <string name="agradecimiento"> Muchas gracias por enviarnos tus datos.</string>
     <string name="button_regresar">Regresar</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="texto_usuario">Usuario</string>
     <string name="texto_contrasena">Contrasena</string>
     <string name="texto_iniciar_sesion">Iniciar sesion</string>
     <string name="texto_registro">Registrarse</string>
     <string name="texto_que_redirige">¿Todavia no te registraste? Hace click aca</string>
+    <string name="logueo_exitoso"> Te logueaste correctamente</string>
+    <string name="ir_al_inicio">Ir al inicio</string>
 
 
 </resources>

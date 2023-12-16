@@ -66,8 +66,10 @@ public class logica_login extends AppCompatActivity {
 
                 //pregunta si hay una sesion
                 if(task.isSuccessful()){
-                    finish();
-                    startActivity(new Intent(logica_login.this, MainActivity.class));//en main tenes que poner el activity de bienvenida
+                    // Redirige a activity_login_exitoso
+                    Intent intent = new Intent(logica_login.this, login_exitoso.class);
+                    startActivity(intent);
+                    finish(); // Cierra la actividad actual para evitar volver a ella desde activity_login_exitoso
                     Toast.makeText(logica_login.this, "Bienvenido!", Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(logica_login.this, "error" + task.getException(), Toast.LENGTH_SHORT).show();
