@@ -2,9 +2,12 @@ package com.example.parcial_1_am_acm4a_asad_lopez;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -36,7 +39,7 @@ public class clase_colecciones extends AppCompatActivity {
         boton = findViewById(R.id.boton_enviar);
 
         // Inicializar el HashMap
-        datosDocumento = new HashMap<>();
+        /*datosDocumento = new HashMap<>();
 
         // Configurar el evento clic del botón
         boton.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +47,12 @@ public class clase_colecciones extends AppCompatActivity {
             public void onClick(View view) {
                 agregarInformacion();
             }
-        });
+        });*/
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
     }
 
     private void agregarInformacion() {
