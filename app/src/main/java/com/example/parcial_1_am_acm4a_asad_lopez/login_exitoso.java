@@ -1,10 +1,15 @@
+// activity_login_exitoso.java
+
 package com.example.parcial_1_am_acm4a_asad_lopez;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-public class login_exitoso extends AppCompatActivity{
+
+public class login_exitoso extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
