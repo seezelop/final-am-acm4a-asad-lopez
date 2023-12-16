@@ -57,6 +57,26 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".clase_colecciones"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".mostrar_datos_coleccion"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
