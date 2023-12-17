@@ -95,6 +95,9 @@ public class clase_colecciones extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getApplicationContext(), "Datos ingresados correctamente", Toast.LENGTH_SHORT).show();
+                        //Intent intent = new Intent(clase_colecciones.this, mostrar_datos_coleccion.class);
+                        //startActivity(intent);
+                        //finish();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

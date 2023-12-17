@@ -67,7 +67,7 @@ public class logica_login extends AppCompatActivity {
                 //pregunta si hay una sesion
                 if(task.isSuccessful()){
                     // Redirige a activity_login_exitoso
-                    Intent intent = new Intent(logica_login.this, clase_colecciones.class);
+                    Intent intent = new Intent(logica_login.this, mostrar_datos_coleccion.class);
                     startActivity(intent);
                     finish(); // Cierra la actividad actual para evitar volver a ella desde activity_login_exitoso
                     Toast.makeText(logica_login.this, "Bienvenido!", Toast.LENGTH_SHORT).show();

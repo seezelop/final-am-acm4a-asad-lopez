@@ -1,18 +1,13 @@
 package com.example.parcial_1_am_acm4a_asad_lopez;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MenuItem;
-
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,36 +25,44 @@ public class mostrar_datos_coleccion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mostrar_coleccion);
 
-        reference = FirebaseDatabase.getInstance().getReference().child("usuario");
+        reference = FirebaseDatabase.getInstance().getReference();//nodo principal
 
         // Obtain references to TextViews
         nombreTextView = findViewById(R.id.info_nombre);
         apellidoTextView = findViewById(R.id.info_apellido);
         dniTextView = findViewById(R.id.info_dni);
 
-        // Retrieve data from Firebase
-        reference.addValueEventListener(new ValueEventListener() {
+        reference.child("usuarios").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                // VALIDACION PARA SABER SI EXISTE
                 if (snapshot.exists()) {
-                    // Assuming you have a Usuario class with appropriate getters and setters
-                    Usuario usuario = snapshot.getValue(Usuario.class);
+                    for (DataSnapshot usuarioSnapshot : snapshot.getChildren()) {
+                        // Para cada usuario, obtenemos el nombre, apellido y dni
+                        String nombre = usuarioSnapshot.child("nombre").getValue(String.class);
+                        String apellido = usuarioSnapshot.child("apellido").getValue(String.class);
+                        String dni = usuarioSnapshot.child("dni").getValue(String.class);
 
-                    // Get the values and set them to TextViews
-                    String nombre = usuario.getNombre();
-                    String apellido = usuario.getApellido();
-                    String dni = usuario.getDni();
+                        // Puedes hacer algo con el nombre, apellido y dni aquí
+                        if (nombre != null) {
+                            nombreTextView.append( nombre + "\n");
+                        }
 
-                    nombreTextView.setText(nombre);
-                    apellidoTextView.setText(apellido);
-                    dniTextView.setText(dni);
+                        if (apellido != null) {
+                            apellidoTextView.append(apellido + "\n");
+                        }
+
+                        if (dni != null) {
+                            dniTextView.append( dni + "\n");
+                        }
+                    }
                 }
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                // Handle error
-                Toast.makeText(getApplicationContext(), "Error: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                // Manejar errores de lectura de datos aquí
+                Log.e("mostrar_datos_coleccion", "Error al leer datos", error.toException());
             }
         });
     }
