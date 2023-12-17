@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import com.google.firebase.FirebaseApp;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 import android.util.Log;
 import android.view.Gravity;
@@ -32,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FirebaseApp.initializeApp(this);//se inicializa firebase
 
         //setupNavegacion();
          TextView contenido_d = findViewById(R.id.contenido_dia);
@@ -101,11 +103,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
+
     }
-
-    /*evento para que al apretar la casita,vaya a la interfaz de inicio de sesion*/
-
-
 
     public void ir_a_inicio_sesion(View view){
         /*Fragment inicioSesionFragment = new inicioSesion();
@@ -117,15 +117,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent=new Intent(MainActivity.this, logica_login.class);
         startActivity(intent);
     }
-    /*metodo para la configuracion de la navegacion*/
-    /*private void setupNavegacion(){
-        BottomNavigationView bottomNavigationView= findViewById(R.id.botonNavegacion);
-        NavHostFragment navHostFragment= (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.contenedor_menu);
-        NavigationUI.setupWithNavController(
-                bottomNavigationView, navHostFragment.getNavController()
 
-        );
-    }*/
+
+
 }
 
 
