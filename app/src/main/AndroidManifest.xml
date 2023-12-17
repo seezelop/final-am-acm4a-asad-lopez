@@ -26,9 +26,6 @@
             android:name=".martes_visitas"
             android:exported="false" />
         <activity
-            android:name=".greeting"
-            android:exported="false" />
-        <activity
             android:name=".martes_gastronomia"
             android:exported="false" />
         <activity
