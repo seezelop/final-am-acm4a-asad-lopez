@@ -45,6 +45,7 @@
     <string name="texto_que_redirige">¿Todavia no te registraste? Hace click aca</string>
     <string name="logueo_exitoso"> Te logueaste correctamente</string>
     <string name="ir_al_inicio">Ir al inicio</string>
+    <string name="texto_subtitulo">Ingrese los datos de los visitantes</string>
 
 
 </resources>
