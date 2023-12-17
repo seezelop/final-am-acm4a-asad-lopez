@@ -61,6 +61,16 @@
                 android:text="Enviar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/edittext_dni" />
+
+            <Button
+                android:id="@+id/boton_enlistar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="82dp"
+                android:layout_marginEnd="79dp"
+                android:text="Ver lista"
+                app:layout_constraintEnd_toStartOf="@+id/boton_enviar"
+                app:layout_constraintTop_toBottomOf="@+id/edittext_dni" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 

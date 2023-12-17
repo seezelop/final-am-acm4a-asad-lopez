@@ -46,6 +46,7 @@ public class clase_colecciones extends AppCompatActivity {
         apellido = findViewById(R.id.edittext_apellido);
         dni = findViewById(R.id.edittext_dni);
         boton = findViewById(R.id.boton_enviar);
+         Button boton2 = findViewById(R.id.boton_enlistar);
 
         // Mostrar la info de la bbdd
         reference.child("usuarios").addValueEventListener(new ValueEventListener() {
@@ -81,7 +82,18 @@ public class clase_colecciones extends AppCompatActivity {
                 ingresarDatos(textoNombre, textoApellido, textoDni);
             }
         });
+
+        boton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(clase_colecciones.this, mostrar_datos_coleccion.class);
+                startActivity(intent);
+                //finish();
+
+            }
+        });
     }
+
 
     private void ingresarDatos(String textoNombre, String textoApellido, String textoDni) {
         Map<String, Object> informacion = new HashMap<>();
@@ -95,9 +107,7 @@ public class clase_colecciones extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void aVoid) {
                         Toast.makeText(getApplicationContext(), "Datos ingresados correctamente", Toast.LENGTH_SHORT).show();
-                        //Intent intent = new Intent(clase_colecciones.this, mostrar_datos_coleccion.class);
-                        //startActivity(intent);
-                        //finish();
+
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
